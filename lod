@@ -1,0 +1,77 @@
+CREATE DATABASE VINISELL;
+USE VINISELL;
+
+
+CREATE TABLE Producteur (
+  Id_producteur int NOT NULL,
+  Prenom varchar(300) NOT NULL,
+  nom varchar(300) NOT NULL,
+  Région varchar(95) NOT NULL,
+  PRIMARY KEY (Id_producteur)
+);
+
+CREATE TABLE VINE (
+  Id_VINE int NOT NULL,
+  Categorie varchar(75) NOT NULL,
+  AGE int NOT NULL,
+  Degree decimal(4) NOT NULL,
+  PRIMARY KEY (Id_VINE)
+);
+
+CREATE TABLE Recolte (
+  Id_producteur int NOT NULL,
+  Id_VINE int NOT NULL,
+  Quantité int NOT NULL,
+  CONSTRAINT Id_producteur FOREIGN KEY (Id_producteur) REFERENCES Producteur (Id_producteur) ,
+  CONSTRAINT Id_VINE FOREIGN KEY (Id_VINE) REFERENCES VINE (Id_VINE) 
+);
+
+
+
+INSERT INTO Producteur (Id_producteur ,Prenom ,nom ,Région)
+values
+(13 ,"Alice" ,"adonis","Sousse"),  (42 ,"Petit" ,"chiron","moldavie"), (38 ,"Moreau" ,"jacinthe","toulouse"), (94 ,"Lefebvre" ,"nemrod","Sousse"), (55 ,"Roux" ,"séraphin","Saskatchewan"), 
+(21 ,"Thomas" ,"cerbère","massachusetts"), (2 ,"Dubois" ,"hercule","Sousse"), (6 ,"David" ,"muse","Manitoba"), (24 ,"Lambert" ,"nabuchodonosor","Sousse");
+
+
+
+INSERT INTO VINE (Id_VINE ,Categorie ,AGE ,Degree)
+values
+(17 ,"Rouge" ,14,13),(11 ,"Rosé" ,20,14), (12 ,"Blanc" ,9,10), (22 ,"Pinot Noir" ,30,16);
+
+INSERT INTO Recolte ( Id_producteur ,Id_VINE ,Quantité  )
+values
+(13 ,17,338),  (42 ,12 ,209), (24 ,12 ,175),(38 ,11 ,708), (94 ,11 ,1000), (24 ,17,234), (55 ,22 ,40), 
+(21 ,11 ,167),  (2 ,12 ,95), (6 ,17 ,33), (24 ,22 ,456);
+
+
+SELECT * FROM producteur;
+
+SELECT * FROM producteur
+ORDER BY nom;
+
+SELECT * FROM producteur
+WHERE Région='Sousse';
+
+SELECT SUM(Quantité) AS Quantité_totale
+FROM Recolte
+WHERE Id_VINE = 12;
+
+SELECT VINE.Categorie, SUM(Recolte.Quantité) AS Quantité_totale
+FROM Recolte
+INNER JOIN VINE ON Recolte.Id_VINE = VINE.Id_VINE
+GROUP BY VINE.Categorie;
+
+SELECT Producteur.Id_producteur, Producteur.Prenom, Producteur.nom, Producteur.Région
+FROM Producteur
+INNER JOIN Recolte ON Producteur.Id_producteur = Recolte.Id_producteur
+WHERE Producteur.Région = 'Sousse'
+AND Recolte.Quantité > 300
+ORDER BY Producteur.nom, Producteur.Prenom;
+
+SELECT DISTINCT Recolte.Id_VINE
+FROM Recolte
+INNER JOIN VINE ON Recolte.Id_VINE = VINE.Id_VINE
+WHERE VINE.Degree > 12
+AND Recolte.Id_producteur = 24;
+
