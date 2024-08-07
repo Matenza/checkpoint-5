@@ -1,0 +1,57 @@
+SSIS 
+Extraction, Transformation, et Chargement (ETL) de données.
+Automatisation de l'importation, l'exportation et la transformation des données entre diverses sources.
+Gestion des flux de données et des flux de contrôle pour organiser des opérations séquentielles.
+Migration de données entre différents systèmes.
+Nettoyage et intégration de données provenant de différentes sources.
+Automatisation des processus de maintenance de base de données.
+
+
+SSAS 
+Analyse en ligne de données 
+Création et gestion de cubes OLAP et de modèles tabulaires pour l'analyse de données.
+Support des analyses multidimensionnelles et des modèles de données tabulaires.
+Création de cubes pour analyser des données en grandes quantités.
+Calculs complexes et agrégations pour les rapports analytiques.
+Support des tableaux de bord et rapports de business intelligence.
+
+SSRS (SQL Server Reporting Services)
+Génération et gestion de rapports interactifs et paginés.
+Distribution de rapports à divers formats (PDF, Excel, HTML, etc.).
+Intégration des rapports dans des applications web et des portails.
+Création de rapports statiques et dynamiques pour les utilisateurs.
+Génération automatique de rapports basés sur des horaires définis.
+Centralisation et gestion des rapports pour les besoins d'entreprise.
+
+Power BI Suite
+Ensemble intégré d'outils pour l'analyse des données et la création de visualisations.
+Comprend Power BI Desktop, Power BI Services et Power BI Mobile.
+Offre une plateforme de business intelligence complète pour analyser, partager et collaborer sur les données.
+Développement et publication de rapports et tableaux de bord.
+Collaboration sur les données et partage de rapports à travers différents dispositifs et plateformes.
+Accès aux rapports et analyses en temps réel.
+
+Power BI Desktop
+Application de bureau pour la création de rapports et de tableaux de bord interactifs.
+Permet de connecter, transformer et modéliser les données avant de les visualiser.
+Fournit des outils pour l’analyse approfondie et la création de visualisations personnalisées.
+Développement de rapports et tableaux de bord sophistiqués.
+Préparation des données pour l’analyse en appliquant des transformations et des calculs.
+Publication de rapports sur Power BI Services pour partage et collaboration.
+
+Power BI Services
+Plateforme en ligne pour la publication, le partage et la collaboration sur les rapports et tableaux de bord.
+Hébergement et gestion centralisée des rapports créés avec Power BI Desktop.
+Fonctionnalités pour les mises à jour automatiques des données, les alertes et les commentaires sur les rapports.
+Distribution et partage de rapports et tableaux de bord avec les utilisateurs de l'organisation.
+Collaboration en temps réel sur les analyses de données.
+Accès aux rapports depuis n'importe quel navigateur web.
+
+Power BI Mobile
+Application mobile pour accéder aux rapports et tableaux de bord Power BI sur smartphones et tablettes.
+Visualisation et interaction avec les données en déplacement.
+Notifications et alertes pour les mises à jour des rapports.
+Consultation de rapports et tableaux de bord sur des dispositifs mobiles.
+Prise de décisions informées en déplacement grâce à l'accès aux données en temps réel.
+Réception d'alertes et notifications pour les données critiques et les changements importants.
+Ces outils, en combinant leurs fonctionnalités respectives, offrent une solution complète pour la gestion, l'analyse et la visualisation des données dans un environnement professionnel.
