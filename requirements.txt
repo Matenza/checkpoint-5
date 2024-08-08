@@ -152,7 +152,6 @@ platformdirs==4.2.1
 plotly-express==0.4.1
 prometheus_client==0.20.0
 prompt-toolkit==3.0.43
-protobuf==4.24.1
 psutil==5.9.8
 ptyprocess==0.7.0
 pure-eval==0.2.2
