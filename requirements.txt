@@ -144,7 +144,6 @@ namex==0.0.8
 nest-asyncio==1.6.0
 opt-einsum==3.3.0
 optree==0.12.1
-packaging==23.1
 panel==1.4.2
 param==2.1.0
 parso==0.8.4
@@ -158,11 +157,6 @@ protobuf==4.24.1
 psutil==5.9.8
 ptyprocess==0.7.0
 pure-eval==0.2.2
-pyarrow==12.0.1
-pydantic==2.7.1
-pydantic_core==2.18.2
-pydeck==0.8.0
-Pygments==2.16.1
 pymdown-extensions==10.8.1
 Pympler==1.0.1
 pyparsing==3.0.9
