@@ -186,7 +186,6 @@ tensorboard-data-server==0.7.2
 tensorflow==2.16.2
 tensorflow-io-gcs-filesystem==0.37.1
 termcolor==2.4.0
-tqdm==4.66.1
 traitlets==5.14.3
 tzlocal==4.3.1
 uc-micro-py==1.0.3
