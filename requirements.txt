@@ -115,7 +115,6 @@ grpcio==1.64.1
 h5py==3.11.0
 htbuilder==0.6.2
 htmlmin==0.1.12
-idna==3.4
 ImageHash==4.3.1
 importlib-metadata==6.8.0
 ipykernel==6.29.4
