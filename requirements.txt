@@ -82,7 +82,6 @@ appnope==0.1.4
 asgiref==3.8.1
 asttokens==2.4.1
 astunparse==1.6.3
-attrs==23.1.0
 beautifulsoup4==4.12.3
 bleach==6.1.0
 blinker==1.6.2
